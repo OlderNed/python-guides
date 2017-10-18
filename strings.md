@@ -6,13 +6,13 @@ Strings is how we represent text in Python (and most other programming languages
 
 To create a string, use `"` or `'` like this:
 
-```
+```python
 some_string = "This is a string"
 ```
 
 String is also the default type when using input:
 
-```
+```python
 my_input = input("Write something: ")
 # my_input will always be a string, even if the user writes only numbers
 ```
@@ -23,7 +23,7 @@ Some times you want to convert strings into other types. The most common use cas
 
 If you want to do math with the input, you can use `int()` (natural numbers, also known as integers) or `float()` (decimal numbers, also known as "floating point").
  
-```
+```python
 my_input = input("Write a number: ")
 # let's imagine that the user wrote 5
 nat_num = int(my_input) # 5
@@ -44,7 +44,7 @@ Strings can behave as lists. This is very useful when manipulating text.
 
 ### Examples
 
-```
+```python
 text = "Python can be kind of fun"
 for character in text:
 	print(character)
@@ -58,7 +58,7 @@ for character in text:
 
 We can also access characters like we access a specific element in a list:
 
-```
+```python
 text = "Hello"
 print(text[1])
 # e
@@ -66,7 +66,7 @@ print(text[1])
 
 If we want to know how many characters are in a string, we can use the method `len()`:
 
-```
+```python
 text = "Hello"
 length = len(text)
 print(length) # 5
