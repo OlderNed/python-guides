@@ -17,7 +17,7 @@ There are two main kinds of loops to remember: `for` and `while`. The general ru
 
 They are written like this:
 
-```
+```python
 for value in [0, 1, 2, 3]:
   # Do something for each value, like
   print(value)
@@ -36,7 +36,7 @@ A good rule of thumb is that numbers is for math, string is for everything else.
 
 It can be confusing to work with these if you're used to working with only numbers. It's a good idea to remember that you can use `type()` to check what type you're dealing with.
 
-```
+```python
 type(5) # int
 type(5.5) # float
 type("text") # str
@@ -48,7 +48,7 @@ Refer to the separate guides for strings and numbers for more details.
 
 If you ever see 1+1 become 11, you're probably dealing with strings. 
 
-```
+```python
 a = "1"
 a + a # 11
 int(a) + int(a) # 2
