@@ -53,3 +53,47 @@ a = "1"
 a + a # 11
 int(a) + int(a) # 2
 ```
+
+## What if
+
+The `if` statement is what we call a conditional expression. It is intended to read like English: 
+
+> If (something is true): Do something.
+
+Or in code:
+
+```python
+if my_fact == True:
+  print("It's true!")
+```
+
+When you write `if` statements, it is helpful to think about it like a English sentence. The `:` can be read as "run the following code", or just "do this":
+
+```python
+if a > 5:
+  print(a)
+# Reads as: If the value of variable a is more than 5, print variable a.
+
+if a == b:
+  print("They're equal!")
+# Reads as: If a is equal to b, print "They're equal!".
+```
+
+*Note that comparing values in python is done by using two equal signs (`==`). This is to differentiate between assignment and comparisons. See [basics](basics.md) for more details.*
+
+### Common mistakes
+
+If an `if` statement is not evaluated to True or False, it will assume you want to check if a value exists or not.
+
+```python
+a = None
+b = "Something"
+
+if a:
+  print("a")
+
+if b:
+  print("b")
+
+# This program would print `b`.
+```

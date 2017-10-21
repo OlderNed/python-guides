@@ -78,3 +78,21 @@ print(length) # 5
 * Make a method that prints the number of characters in a file
 	* See the file handling guide for how you read files
 	* Remember that you will need to add together the sum  of the number of characters on each line
+
+## Formatting strings
+
+String formatting is a comprehensive topic. Instead of covering everything in detail here, I'll reffer you to [this guide](https://www.digitalocean.com/community/tutorials/how-to-use-string-formatters-in-python-3) by DigitalOcean. Most python 3 books also has a section on string formatting.
+
+### Tasks
+
+```python
+a = 3.14159265358
+b = 4.2
+c = 123.456
+```
+
+Using the above variables, print a string that formats each value with two decimal points. The result should be:
+
+```sh
+a is 3.14, b is 4.20, c is 123.45
+```
