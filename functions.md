@@ -1,3 +1,24 @@
+## Writing a function
+
+In python, you "define" functions like this:
+
+```python
+def my_function():
+    print("This s a function that prints this text")
+```
+
+A function can have one or more parameters (sometimes called arguments or just inputs). These are listed in the parentheses:
+
+```python
+def add_numbers(first, second):
+    return first + second
+
+a = add_numbers(1, 2)
+print(a) # 3
+```
+
+The `return` in the previous example indicates what result is given to the caller of the function, and is the reason why the result of first + second is available in `a`.
+
 ## Functions and methods
 
 Functions and methods, are named pieces of code. You can use functions and methods provided by the language or *libraries*, or you can write your own.
