@@ -6,6 +6,7 @@ This is a collection of guides to basic concepts in Python, meant for beginners 
 * [Loops - `for` and `while`](loops.md)
 * [Strings - working with text](strings.md)
 * [Numbers - doing math in code](numbers.md)
+* [Operators - `=` `==` `+=` - are they not all equal?](operators.md)
 
 ### Notes
 
