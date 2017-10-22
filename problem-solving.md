@@ -8,7 +8,7 @@ Loops are very useful, and most programs will use loops at some point. You will 
 
 * Read a file with multiple lines
 * Do the same calculation on multiple values
-* The input to your method is a list
+* The input to your function or method is a list
 * Handle a string as a list of characters
 
 ### The kinds of loops

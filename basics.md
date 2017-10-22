@@ -17,17 +17,17 @@ print("a is", a) # a is 4
 
 This may not seem that useful yet, but it will become more apparent as we start working with more complex examples later on.
 
-# Methods
+# Functions
 
-Methods, in some cases also called functions (we won't get into why, just remember that both terms can appear), are named pieces of code. You can use methods provided by the language, or *libraries*, or you can write your own.
+Functions, in some cases also called functions (we won't get into why, just remember that both terms can appear), are named pieces of code. You can use functions provided by the language, or *libraries*, or you can write your own.
 
-A method can be recognized by the ending parentheses: `len()`. Methods may sometimes expect variables as input. For example `len()`, which calculates the length of a list or a string, needs a list or a string as input:
+A function can be recognized by the ending parentheses: `len()`. Functions may sometimes expect variables as input. For example `len()`, which calculates the length of a list or a string, needs a list or a string as input:
 
 ```python
 len("test") # 4
 ```
 
-You can assign the result of a method to a variable:
+You can assign the result of a function to a variable:
 
 ```python
 a = "test"
@@ -42,7 +42,7 @@ Variables can have different types. These types have different properties. The m
 
 You can read more about the types themselves in the linked documents above.
 
-To check what type a variable is, use the `type()` method:
+To check what type a variable is, use the `type()` function:
 
 ```python
 a = "test"
@@ -66,7 +66,7 @@ You can read more about math in the [numbers document](numbers.md#math).
 
 # Printing
 
-We've used the print method in some of the examples above, but it's worth mentioning it more speicifically too. `print()` is a helpful method that prints whatever it receives to the console. It can be used both as useful output (for command line based programs) and as *debug* information when writing a program.
+We've used the print function in some of the examples above, but it's worth mentioning it more speicifically too. `print()` is a helpful function that prints whatever it receives to the console. It can be used both as useful output (for command line based programs) and as *debug* information when writing a program.
 
 `print()` is special in that it can work with any type and any number of inputs:
 

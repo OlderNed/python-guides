@@ -34,8 +34,8 @@ See the separate guides for numbers to learn more about doing math in python.
 
 ### Tasks
 
-* Make a method that reads a number from the user (using `input()`) and returns the number multiplied by two
-* Make a method that reads a number from the user (using `input()`) and returns the number multiplied by pi (using 3.14 or Math.pi, that's up to you)
+* Make a function that reads a number from the user (using `input()`) and returns the number multiplied by two
+* Make a function that reads a number from the user (using `input()`) and returns the number multiplied by pi (using 3.14 or Math.pi, that's up to you)
 	* Can you still use `int()`? Why or why not?
 
 ## Strings as lists
@@ -64,7 +64,7 @@ print(text[1])
 # e
 ```
 
-If we want to know how many characters are in a string, we can use the method `len()`:
+If we want to know how many characters are in a string, we can use the function `len()`:
 
 ```python
 text = "Hello"
@@ -74,8 +74,8 @@ print(length) # 5
 
 ### Tasks
 
-* Make a method that prints the number of characters in the string the user wrote.
-* Make a method that prints the number of characters in a file
+* Make a function that prints the number of characters in the string the user wrote.
+* Make a function that prints the number of characters in a file
 	* See the file handling guide for how you read files
 	* Remember that you will need to add together the sum  of the number of characters on each line
 

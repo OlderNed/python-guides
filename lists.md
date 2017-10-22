@@ -87,5 +87,5 @@ a = [1, 2, 3] + [4, 5, 6]
 
 ## Tasks
 
-* Create a method that takes a list as an argument and adds a value to it
-* Create a method that reverses a list
+* Create a function that takes a list as an argument and adds a value to it
+* Create a function that reverses a list
