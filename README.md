@@ -8,7 +8,7 @@ This is a collection of guides to basic concepts in Python, meant for beginners 
 * [Numbers - doing math in code](numbers.md)
 * [Lists - when one value is not enough](lists.md)
 * [Operators - `=` `==` `+=` - are they not all equal?](operators.md)
-* [functions](functions.md)
+* [functions - collecting code into useful bits](functions.md)
 
 ### Notes
 
