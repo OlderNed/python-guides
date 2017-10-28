@@ -32,7 +32,7 @@ while my_number < 20:
 
 ## Strings and numbers
 
-A good rule of thumb is that numbers is for math, string is for everything else. You can convert between them using `int()` (make a natural number), `float()` (make a decimal number), and `str()` (make a text). 
+A good rule of thumb is that numbers is for math, string is for everything else. You can convert between them using `int()` (make a natural number), `float()` (make a decimal number), and `str()` (make a text).
 
 It can be confusing to work with these if you're used to working with only numbers. It's a good idea to remember that you can use `type()` to check what type you're dealing with.
 
@@ -46,7 +46,7 @@ Refer to the separate guides for strings and numbers for more details.
 
 ### Common mistakes
 
-If you ever see 1+1 become 11, you're probably dealing with strings. 
+If you ever see 1+1 become 11, you're probably dealing with strings.
 
 ```python
 a = "1"
@@ -56,7 +56,7 @@ int(a) + int(a) # 2
 
 ## What if
 
-The `if` statement is what we call a conditional expression. It is intended to read like English: 
+The `if` statement is what we call a conditional expression. It is intended to read like English:
 
 > If (something is true): Do something.
 
@@ -97,3 +97,38 @@ if b:
 
 # This program would print `b`.
 ```
+
+## Scoping - Where to put what when
+
+Scoping indicates where a variable is accessible. Let's look at an example:
+
+```python
+a = 1
+
+def some_fun():
+  b = 2
+
+  for c in range(b):
+    d = 3
+    print(a, b, c, d)
+```
+
+In the python code above, there are three *scopes*.
+
+`a` is in what's called the *global scope*. This means that this variable is available in the entire file. While this can be useful, it is generally advicable not to declare variables in the global scope. There are many reasons for this, for example it can be difficult to avoid issues where multiple functions overwrites the same value.
+
+`b` is in the scope of `some_fun()`. This means that only code inside `some_fun()` can write to and read this variable. This is a good place for variables that will be read or manipulated throughout the function. You might also want to place variables that will be returned at the end of the function here, especially if the value is agregated (like a counter or a list that will be filled).
+
+`c` is *implicitly* in the scope of the for loop, by the fact that it's a part of the loop statement. Here it will contain each value of `range(b)` for each iteration of the loop (`0` for the first iteration and so on).
+
+`d` is also in the scope of the for loop. This means that it is only available inside the loop. It also means that it will be redefined for each iteration of the loop.
+
+Notice how the indentation (space on the left) indicates which scope each variable is in.
+
+### Scoping rules of thumb
+
+* Scoping is indicated by indentation
+* Avoid using the global scope if possible
+* Write your variables in the narrowest scope possible (to avoid accidental redifinitions of the same names)
+* If you update the value or add to a list throughout a function, write it in the function scope at the top
+* Outside of scoping, you also need to remember that a variable must be defined before it's used
