@@ -53,7 +53,20 @@ a.append(4)
 # a == [1, 2, 3, 4]
 ```
 
-You can access and modify values in a list by using square brackets. You use the index (an integer, starting from 0) of the value to reffer to it.
+### List indexes
+
+The _index_ of a list is the location of a value. You can access a value in a list using the index like this:
+
+```python
+my_list [1, 5, 6, 9]
+my_list[0] # 1
+my_list[1] # 5
+my_list[2] # 6
+```
+
+Note that indexes start at 0, not 1.
+
+You can also modify values in a list by using square brackets. You use the index (an integer, starting from 0) of the value to reffer to it.
 
 ```python
 a = [5, 3, 2, 3]
@@ -77,6 +90,8 @@ a[-2] # 3
 
 a[-1] = 8 # a is now [5, 4, 3, 8]
 ```
+
+### Combining lists
 
 Lists can be combined using + (in the same way as strings):
 
