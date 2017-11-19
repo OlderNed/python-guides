@@ -11,6 +11,35 @@ A python list looks like this:
 
 Be aware that the list might not be just numbers, but for simplicity we'll use numbers in this example.
 
+A for loop looks like this:
+
+```python
+my_list = [1, 5, 6, 9]
+for number in my_list:
+  print(number)
+# 1
+# 5
+# 6
+# 9
+```
+
+### Range
+
+`range()` is very useful when working with loop.
+
+It is most useful when you need both the [_index_](lists.md#list-indexes) and the _value_ of a list.
+
+For example, if you want to list out a chapter list, you can do it like this:
+
+```python
+chapters = ["The beginning", "The middle", "The end"]
+
+count = len(chapters)
+
+for index in range(count):
+  print("chapter {}: {}".format(index, chapters[index]))
+```
+
 ### Tasks
 
 Using this list:
