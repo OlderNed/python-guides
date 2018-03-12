@@ -87,13 +87,15 @@ Usage:
 
 ## Logical operators
 
-Some times you want to check more than one comparison at a time. You can use logical operators to do this. In python, the most common logical operators are `and` and `or`. They can be used like in English:
+Some times you want to check more than one comparison at a time. You can use logical operators to do this. In python, the most common logical operators are `and`, `or` and `not`. They can be used like in English:
 
 ```python
 True and True # True
 True and False # False
 True or False # True
 False or False # False
+not True # False
+not False # True
 ```
 
 In usage:
