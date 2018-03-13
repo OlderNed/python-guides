@@ -128,7 +128,7 @@ Notice how the indentation (space on the left) indicates which scope each variab
 ### Scoping rules of thumb
 
 * Scoping is indicated by indentation
-* Python creates a new scope when it reads a `:`
+* Python creates a new scope when it reads a `:`, unless it's inside a dictionary
 * Avoid using the global scope if possible
 * Write your variables in the narrowest scope possible (to avoid accidental redifinitions of the same names)
 * If you update the value or add to a list throughout a function, write it in the function scope at the top
